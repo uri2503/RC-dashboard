@@ -419,6 +419,7 @@ function cardHTML(p) {
       '<div class="foot-btns">'+
         '<button class="btn-sm" onclick="openDetail(\''+p.id+'\')">Details</button>'+
         '<button class="btn-sm" onclick="openEdit(\''+p.id+'\')">✏</button>'+
+        (p.repo ? '<button class="btn-sm" style="color:#c0392b;border-color:#4a1a16" onclick="deployProject(\''+p.id+'\')">▲ Deploy</button>' : '')+
       '</div>'+
     '</div>'+
   '</div>';
